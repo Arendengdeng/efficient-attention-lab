@@ -1,0 +1,5 @@
+{
+    "python.defaultInterpreterPath": "E:\\Program\\miniconda3\\envs\\dl\\python.exe",
+    "python.terminal.activateEnvironment": false,
+    "python.experiments.optOutFrom": ["pythonTerminalEnvVarActivation"]
+}
