@@ -1,0 +1,98 @@
+[
+  {
+    "label": "simple_attention N=128",
+    "latency_ms": 0.1927849996718578,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 19.90656,
+    "seq_len": 128,
+    "impl": "simple_attention"
+  },
+  {
+    "label": "F.sdpa (PyTorch) N=128",
+    "latency_ms": 0.3970049991039559,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 19.775488,
+    "seq_len": 128,
+    "impl": "F.sdpa (PyTorch)"
+  },
+  {
+    "label": "simple_attention N=256",
+    "latency_ms": 0.14618499990319833,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 20.430848,
+    "seq_len": 256,
+    "impl": "simple_attention"
+  },
+  {
+    "label": "F.sdpa (PyTorch) N=256",
+    "latency_ms": 0.4063999993377365,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 19.90656,
+    "seq_len": 256,
+    "impl": "F.sdpa (PyTorch)"
+  },
+  {
+    "label": "simple_attention N=512",
+    "latency_ms": 0.5547349996049888,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 22.265856,
+    "seq_len": 512,
+    "impl": "simple_attention"
+  },
+  {
+    "label": "F.sdpa (PyTorch) N=512",
+    "latency_ms": 0.9846450004260987,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 20.168704,
+    "seq_len": 512,
+    "impl": "F.sdpa (PyTorch)"
+  },
+  {
+    "label": "simple_attention N=1024",
+    "latency_ms": 0.9447599994018674,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 29.0816,
+    "seq_len": 1024,
+    "impl": "simple_attention"
+  },
+  {
+    "label": "F.sdpa (PyTorch) N=1024",
+    "latency_ms": 1.2763699996867217,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 20.692992,
+    "seq_len": 1024,
+    "impl": "F.sdpa (PyTorch)"
+  },
+  {
+    "label": "simple_attention N=2048",
+    "latency_ms": 7.24847000092268,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 55.296,
+    "seq_len": 2048,
+    "impl": "simple_attention"
+  },
+  {
+    "label": "F.sdpa (PyTorch) N=2048",
+    "latency_ms": 0.47665500023867935,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 21.741568,
+    "seq_len": 2048,
+    "impl": "F.sdpa (PyTorch)"
+  },
+  {
+    "label": "simple_attention N=4096",
+    "latency_ms": 1.8766199995297939,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 158.056448,
+    "seq_len": 4096,
+    "impl": "simple_attention"
+  },
+  {
+    "label": "F.sdpa (PyTorch) N=4096",
+    "latency_ms": 1.4047449993086047,
+    "latency_iqr_ms": 0.0,
+    "memory_mb": 23.83872,
+    "seq_len": 4096,
+    "impl": "F.sdpa (PyTorch)"
+  }
+]

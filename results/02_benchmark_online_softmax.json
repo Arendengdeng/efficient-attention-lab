@@ -1,0 +1,86 @@
+[
+  {
+    "label": "standard (math)",
+    "latency_ms": 0.4435800015926361,
+    "memory_mb": 10.55232,
+    "seq_len": 128,
+    "impl": "standard (math)"
+  },
+  {
+    "label": "tiled_online",
+    "latency_ms": 13.770740001928061,
+    "memory_mb": 10.13248,
+    "seq_len": 128,
+    "impl": "tiled_online"
+  },
+  {
+    "label": "F.sdpa (default)",
+    "latency_ms": 0.14823999954387546,
+    "memory_mb": 9.961472,
+    "seq_len": 128,
+    "impl": "F.sdpa (default)"
+  },
+  {
+    "label": "standard (math)",
+    "latency_ms": 0.4007900017313659,
+    "memory_mb": 12.846592,
+    "seq_len": 256,
+    "impl": "standard (math)"
+  },
+  {
+    "label": "tiled_online",
+    "latency_ms": 48.07792000938207,
+    "memory_mb": 10.660864,
+    "seq_len": 256,
+    "impl": "tiled_online"
+  },
+  {
+    "label": "F.sdpa (default)",
+    "latency_ms": 0.15066999476402998,
+    "memory_mb": 10.48576,
+    "seq_len": 256,
+    "impl": "F.sdpa (default)"
+  },
+  {
+    "label": "standard (math)",
+    "latency_ms": 0.4211700055748224,
+    "memory_mb": 20.97408,
+    "seq_len": 512,
+    "impl": "standard (math)"
+  },
+  {
+    "label": "tiled_online",
+    "latency_ms": 190.2344899950549,
+    "memory_mb": 11.717632,
+    "seq_len": 512,
+    "impl": "tiled_online"
+  },
+  {
+    "label": "F.sdpa (default)",
+    "latency_ms": 0.33110000658780336,
+    "memory_mb": 11.534336,
+    "seq_len": 512,
+    "impl": "F.sdpa (default)"
+  },
+  {
+    "label": "standard (math)",
+    "latency_ms": 5.917090002913028,
+    "memory_mb": 51.384832,
+    "seq_len": 1024,
+    "impl": "standard (math)"
+  },
+  {
+    "label": "tiled_online",
+    "latency_ms": 740.4198899981566,
+    "memory_mb": 13.831168,
+    "seq_len": 1024,
+    "impl": "tiled_online"
+  },
+  {
+    "label": "F.sdpa (default)",
+    "latency_ms": 0.9063400095328689,
+    "memory_mb": 13.631488,
+    "seq_len": 1024,
+    "impl": "F.sdpa (default)"
+  }
+]
