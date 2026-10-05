@@ -1,0 +1,70 @@
+{
+  "qkv": [
+    {
+      "seq_len": 64,
+      "batch": 1,
+      "heads": 2,
+      "d_k": 32,
+      "qkv_fp32_bytes": 49152,
+      "qkv_fp16_bytes": 24576,
+      "qkv_int8_with_params_bytes": 15360,
+      "metric": "tensor_data_bytes_excluding_allocator"
+    },
+    {
+      "seq_len": 128,
+      "batch": 1,
+      "heads": 2,
+      "d_k": 32,
+      "qkv_fp32_bytes": 98304,
+      "qkv_fp16_bytes": 49152,
+      "qkv_int8_with_params_bytes": 30720,
+      "metric": "tensor_data_bytes_excluding_allocator"
+    },
+    {
+      "seq_len": 256,
+      "batch": 1,
+      "heads": 2,
+      "d_k": 32,
+      "qkv_fp32_bytes": 196608,
+      "qkv_fp16_bytes": 98304,
+      "qkv_int8_with_params_bytes": 61440,
+      "metric": "tensor_data_bytes_excluding_allocator"
+    },
+    {
+      "seq_len": 512,
+      "batch": 1,
+      "heads": 2,
+      "d_k": 32,
+      "qkv_fp32_bytes": 393216,
+      "qkv_fp16_bytes": 196608,
+      "qkv_int8_with_params_bytes": 122880,
+      "metric": "tensor_data_bytes_excluding_allocator"
+    },
+    {
+      "seq_len": 1024,
+      "batch": 1,
+      "heads": 2,
+      "d_k": 32,
+      "qkv_fp32_bytes": 786432,
+      "qkv_fp16_bytes": 393216,
+      "qkv_int8_with_params_bytes": 245760,
+      "metric": "tensor_data_bytes_excluding_allocator"
+    }
+  ],
+  "weights": [
+    {
+      "impl": "mha_fp32",
+      "device": "cpu",
+      "d_model": 128,
+      "weight_storage_bytes": 262144,
+      "storage_metric": "weight_data_and_qparams_excluding_packing"
+    },
+    {
+      "impl": "mha_dynamic_int8",
+      "device": "cpu",
+      "d_model": 128,
+      "weight_storage_bytes": 65600,
+      "storage_metric": "weight_data_and_qparams_excluding_packing"
+    }
+  ]
+}

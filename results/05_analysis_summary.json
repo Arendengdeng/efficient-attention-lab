@@ -1,0 +1,89 @@
+{
+  "benchmark_rows": 72,
+  "analysis_inputs": [
+    "01_benchmark_standard_attention.json",
+    "02_benchmark_online_softmax.json",
+    "03_benchmark_flash_attention.json",
+    "04_benchmark_quantization.json",
+    "02_validation_online_softmax.json",
+    "04_quantization_error.json",
+    "04_quantization_storage.json",
+    "04_quantization_tools.json",
+    "04_pareto.json",
+    "04_environment.json"
+  ],
+  "validation_02": {
+    "forward_checks_passed": 10,
+    "precision_checks_passed": 5
+  },
+  "timing_protocol_02": {
+    "rounds": 5,
+    "iterations_per_round": 10,
+    "latency": "median_of_round_means",
+    "error_bars": "round_min_max"
+  },
+  "status_counts": [
+    {
+      "notebook": "01",
+      "scope": "attention_core",
+      "status": "ok",
+      "count": 12
+    },
+    {
+      "notebook": "02",
+      "scope": "attention_core",
+      "status": "ok",
+      "count": 12
+    },
+    {
+      "notebook": "03",
+      "scope": "attention_core",
+      "status": "ok",
+      "count": 18
+    },
+    {
+      "notebook": "03",
+      "scope": "attention_core",
+      "status": "skipped",
+      "count": 2
+    },
+    {
+      "notebook": "04",
+      "scope": "attention_core",
+      "status": "ok",
+      "count": 12
+    },
+    {
+      "notebook": "04",
+      "scope": "mha_layer",
+      "status": "ok",
+      "count": 8
+    },
+    {
+      "notebook": "04",
+      "scope": "qkv_projection",
+      "status": "ok",
+      "count": 8
+    }
+  ],
+  "original_environment_04": {
+    "torch_version": "2.11.0+cu128",
+    "numpy_version": "2.2.6",
+    "device": "cuda",
+    "cuda_version": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "quantized_engine": "x86",
+    "float32_matmul_precision": "highest"
+  },
+  "memory_metric": "incremental_peak_allocated",
+  "memory_unit": "MB = 1000000 bytes",
+  "ratio_definition": "baseline / candidate; speedup > 1 means candidate is faster",
+  "flash_forced_successful_rows": 5,
+  "auto_backend_recorded": false,
+  "csv_files": [
+    "05_benchmark_summary.csv",
+    "05_comparison_ratios.csv",
+    "05_quantization_errors.csv",
+    "05_storage_summary.csv"
+  ]
+}

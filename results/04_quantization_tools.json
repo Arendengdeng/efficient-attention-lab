@@ -1,0 +1,8 @@
+[
+  {
+    "tool": "torch.ao.quantization",
+    "status": "ok",
+    "device": "cpu",
+    "engine": "x86"
+  }
+]

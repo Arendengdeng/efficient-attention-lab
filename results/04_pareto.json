@@ -1,0 +1,65 @@
+[
+  {
+    "scope": "attention_core",
+    "seq_len": 256,
+    "device": "cuda:0",
+    "impl": "fp32_explicit",
+    "latency_ms": 0.16631889999985106,
+    "relative_l2": 0.0,
+    "on_front": true
+  },
+  {
+    "scope": "attention_core",
+    "seq_len": 256,
+    "device": "cuda:0",
+    "impl": "sdpa_auto_fp32",
+    "latency_ms": 0.13401205000036498,
+    "relative_l2": 7.994678584105577e-07,
+    "on_front": true
+  },
+  {
+    "scope": "attention_core",
+    "seq_len": 256,
+    "device": "cuda:0",
+    "impl": "int8_qdq_fp32_compute",
+    "latency_ms": 2.763360049999619,
+    "relative_l2": 0.009298666541444098,
+    "on_front": false
+  },
+  {
+    "scope": "qkv_projection",
+    "seq_len": 256,
+    "device": "cpu",
+    "impl": "fp32",
+    "latency_ms": 0.6361666500026786,
+    "relative_l2": 0.0,
+    "on_front": true
+  },
+  {
+    "scope": "qkv_projection",
+    "seq_len": 256,
+    "device": "cpu",
+    "impl": "dynamic_int8",
+    "latency_ms": 0.5768076500004327,
+    "relative_l2": 0.019991396725625624,
+    "on_front": true
+  },
+  {
+    "scope": "mha_layer",
+    "seq_len": 256,
+    "device": "cpu",
+    "impl": "fp32",
+    "latency_ms": 1.5187584499983586,
+    "relative_l2": 0.0,
+    "on_front": true
+  },
+  {
+    "scope": "mha_layer",
+    "seq_len": 256,
+    "device": "cpu",
+    "impl": "dynamic_int8",
+    "latency_ms": 1.3840163499992286,
+    "relative_l2": 0.02982476536534288,
+    "on_front": true
+  }
+]
