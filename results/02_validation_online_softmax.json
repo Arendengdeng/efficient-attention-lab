@@ -1,0 +1,276 @@
+{
+  "forward_checks": [
+    {
+      "method": "tiled_online_attention",
+      "reference": "forced SDPA math",
+      "shape": [
+        2,
+        4,
+        65,
+        32
+      ],
+      "dtype": "torch.float32",
+      "causal": false,
+      "block_r": 8,
+      "block_c": 8,
+      "status": "passed",
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "max_abs_error": 5.364418029785156e-07,
+      "relative_l2": 3.118740607988002e-07
+    },
+    {
+      "method": "tiled_online_attention",
+      "reference": "forced SDPA math",
+      "shape": [
+        2,
+        4,
+        65,
+        32
+      ],
+      "dtype": "torch.float32",
+      "causal": false,
+      "block_r": 16,
+      "block_c": 16,
+      "status": "passed",
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "max_abs_error": 5.364418029785156e-07,
+      "relative_l2": 3.0651452220809006e-07
+    },
+    {
+      "method": "tiled_online_attention",
+      "reference": "forced SDPA math",
+      "shape": [
+        2,
+        4,
+        65,
+        32
+      ],
+      "dtype": "torch.float32",
+      "causal": false,
+      "block_r": 32,
+      "block_c": 32,
+      "status": "passed",
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "max_abs_error": 4.172325134277344e-07,
+      "relative_l2": 3.259994798554544e-07
+    },
+    {
+      "method": "tiled_online_attention",
+      "reference": "forced SDPA math",
+      "shape": [
+        2,
+        4,
+        65,
+        32
+      ],
+      "dtype": "torch.float32",
+      "causal": false,
+      "block_r": 7,
+      "block_c": 13,
+      "status": "passed",
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "max_abs_error": 5.960464477539062e-07,
+      "relative_l2": 3.0653603744212887e-07
+    },
+    {
+      "method": "tiled_online_attention",
+      "reference": "forced SDPA math",
+      "shape": [
+        2,
+        4,
+        65,
+        32
+      ],
+      "dtype": "torch.float32",
+      "causal": false,
+      "block_r": 128,
+      "block_c": 128,
+      "status": "passed",
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "max_abs_error": 4.76837158203125e-07,
+      "relative_l2": 3.421033056838496e-07
+    },
+    {
+      "method": "tiled_online_attention",
+      "reference": "forced SDPA math",
+      "shape": [
+        2,
+        4,
+        65,
+        32
+      ],
+      "dtype": "torch.float32",
+      "causal": true,
+      "block_r": 8,
+      "block_c": 8,
+      "status": "passed",
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "max_abs_error": 5.960464477539062e-07,
+      "relative_l2": 1.916036183047254e-07
+    },
+    {
+      "method": "tiled_online_attention",
+      "reference": "forced SDPA math",
+      "shape": [
+        2,
+        4,
+        65,
+        32
+      ],
+      "dtype": "torch.float32",
+      "causal": true,
+      "block_r": 16,
+      "block_c": 16,
+      "status": "passed",
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "max_abs_error": 5.513429641723633e-07,
+      "relative_l2": 1.8850418825877568e-07
+    },
+    {
+      "method": "tiled_online_attention",
+      "reference": "forced SDPA math",
+      "shape": [
+        2,
+        4,
+        65,
+        32
+      ],
+      "dtype": "torch.float32",
+      "causal": true,
+      "block_r": 32,
+      "block_c": 32,
+      "status": "passed",
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "max_abs_error": 6.258487701416016e-07,
+      "relative_l2": 2.1014660944729258e-07
+    },
+    {
+      "method": "tiled_online_attention",
+      "reference": "forced SDPA math",
+      "shape": [
+        2,
+        4,
+        65,
+        32
+      ],
+      "dtype": "torch.float32",
+      "causal": true,
+      "block_r": 7,
+      "block_c": 13,
+      "status": "passed",
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "max_abs_error": 5.364418029785156e-07,
+      "relative_l2": 1.9008973595191492e-07
+    },
+    {
+      "method": "tiled_online_attention",
+      "reference": "forced SDPA math",
+      "shape": [
+        2,
+        4,
+        65,
+        32
+      ],
+      "dtype": "torch.float32",
+      "causal": true,
+      "block_r": 128,
+      "block_c": 128,
+      "status": "passed",
+      "atol": 1e-05,
+      "rtol": 0.0001,
+      "max_abs_error": 6.258487701416016e-07,
+      "relative_l2": 2.1165159580505133e-07
+    }
+  ],
+  "precision_checks": [
+    {
+      "shape": [
+        1,
+        1,
+        65,
+        32
+      ],
+      "block_size": 8,
+      "causal": false,
+      "reference": "forced SDPA math, FP64",
+      "fp32_max_abs_error": 2.0691831065233757e-07,
+      "fp16_total_max_abs_error": 0.0006932628798999863,
+      "fp16_same_input_max_abs_error": 0.0002241244247984664,
+      "fp16_input_only_max_abs_error": 0.0007205503979273165,
+      "status": "passed"
+    },
+    {
+      "shape": [
+        1,
+        1,
+        65,
+        32
+      ],
+      "block_size": 16,
+      "causal": false,
+      "reference": "forced SDPA math, FP64",
+      "fp32_max_abs_error": 2.6573017886111217e-07,
+      "fp16_total_max_abs_error": 0.0006932628798999863,
+      "fp16_same_input_max_abs_error": 0.0002241244247984664,
+      "fp16_input_only_max_abs_error": 0.0007205503979273165,
+      "status": "passed"
+    },
+    {
+      "shape": [
+        1,
+        1,
+        65,
+        32
+      ],
+      "block_size": 32,
+      "causal": false,
+      "reference": "forced SDPA math, FP64",
+      "fp32_max_abs_error": 3.32375354628045e-07,
+      "fp16_total_max_abs_error": 0.0006932628798999863,
+      "fp16_same_input_max_abs_error": 0.0002241244247984664,
+      "fp16_input_only_max_abs_error": 0.0007205503979273165,
+      "status": "passed"
+    },
+    {
+      "shape": [
+        1,
+        1,
+        65,
+        32
+      ],
+      "block_size": 64,
+      "causal": false,
+      "reference": "forced SDPA math, FP64",
+      "fp32_max_abs_error": 3.32375354628045e-07,
+      "fp16_total_max_abs_error": 0.0006932628798999863,
+      "fp16_same_input_max_abs_error": 0.0002241244247984664,
+      "fp16_input_only_max_abs_error": 0.0007205503979273165,
+      "status": "passed"
+    },
+    {
+      "shape": [
+        1,
+        1,
+        65,
+        32
+      ],
+      "block_size": 128,
+      "causal": false,
+      "reference": "forced SDPA math, FP64",
+      "fp32_max_abs_error": 3.031024303767893e-07,
+      "fp16_total_max_abs_error": 0.0006932628798999863,
+      "fp16_same_input_max_abs_error": 0.0002241244247984664,
+      "fp16_input_only_max_abs_error": 0.0007205503979273165,
+      "status": "passed"
+    }
+  ]
+}

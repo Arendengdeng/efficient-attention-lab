@@ -1,0 +1,23 @@
+# Keep the final submission limited to source notebooks and result evidence.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/notebooks/
+!/results/
+
+/notebooks/*
+!/notebooks/01_standard_attention.ipynb
+!/notebooks/02_online_softmax.ipynb
+!/notebooks/03_flash_attention.ipynb
+!/notebooks/04_int8_quantization.ipynb
+!/notebooks/05_results_analysis.ipynb
+
+/results/*
+!/results/*.json
+!/results/03_backward_memory.png
+!/results/05_benchmark_summary.csv
+!/results/05_comparison_ratios.csv
+!/results/05_memory_comparison.png
+!/results/05_quantization_errors.csv
+!/results/05_storage_summary.csv

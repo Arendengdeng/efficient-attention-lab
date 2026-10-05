@@ -1,0 +1,9 @@
+{
+  "torch_version": "2.11.0+cu128",
+  "numpy_version": "2.2.6",
+  "device": "cuda",
+  "cuda_version": "12.8",
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "quantized_engine": "x86",
+  "float32_matmul_precision": "highest"
+}

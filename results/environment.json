@@ -1,0 +1,101 @@
+{
+  "started_utc": "2026-10-04T20:46:59.263060+00:00",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "distribution": "Ubuntu 22.04.5 LTS",
+  "python_version": "3.10.12",
+  "torch_version": "2.11.0+cu128",
+  "cuda_build_version": "12.8",
+  "cuda_available": true,
+  "flash_attention_available": true,
+  "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "kernel": {
+    "name": "efficient-attention-flash",
+    "display_name": "Python (WSL FlashAttention)",
+    "language": "python"
+  },
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9",
+    "ipykernel": "7.3.0",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0"
+  },
+  "notebook_execution": [
+    {
+      "notebook": "01_standard_attention.ipynb",
+      "status": "passed",
+      "seconds": 114.78,
+      "code_cells": 11,
+      "python_version": "3.10.12",
+      "inline_images": 4
+    },
+    {
+      "notebook": "02_online_softmax.ipynb",
+      "status": "passed",
+      "seconds": 523.31,
+      "code_cells": 12,
+      "python_version": "3.10.12",
+      "inline_images": 3,
+      "started_utc": "2026-10-04T22:55:31.703140+00:00",
+      "finished_utc": "2026-10-04T23:04:15.080045+00:00"
+    },
+    {
+      "notebook": "03_flash_attention.ipynb",
+      "status": "passed",
+      "seconds": 65.64,
+      "code_cells": 15,
+      "python_version": "3.10.12",
+      "inline_images": 4
+    },
+    {
+      "notebook": "04_int8_quantization.ipynb",
+      "status": "passed",
+      "seconds": 80.31,
+      "code_cells": 14,
+      "python_version": "3.10.12",
+      "inline_images": 8
+    },
+    {
+      "notebook": "05_results_analysis.ipynb",
+      "status": "passed",
+      "seconds": 36.54,
+      "code_cells": 18,
+      "python_version": "3.10.12",
+      "inline_images": 7,
+      "started_utc": "2026-10-04T23:06:28.632562+00:00",
+      "finished_utc": "2026-10-04T23:07:05.241356+00:00"
+    }
+  ],
+  "finished_utc": "2026-10-04T20:54:21.997912+00:00",
+  "reruns": [
+    {
+      "notebook": "02_online_softmax.ipynb",
+      "status": "passed",
+      "seconds": 523.31,
+      "code_cells": 12,
+      "python_version": "3.10.12",
+      "inline_images": 3,
+      "started_utc": "2026-10-04T22:55:31.703140+00:00",
+      "finished_utc": "2026-10-04T23:04:15.080045+00:00",
+      "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+      "torch_version": "2.11.0+cu128",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "kernel": "efficient-attention-flash"
+    },
+    {
+      "notebook": "05_results_analysis.ipynb",
+      "status": "passed",
+      "seconds": 36.54,
+      "code_cells": 18,
+      "python_version": "3.10.12",
+      "inline_images": 7,
+      "started_utc": "2026-10-04T23:06:28.632562+00:00",
+      "finished_utc": "2026-10-04T23:07:05.241356+00:00",
+      "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+      "torch_version": "2.11.0+cu128",
+      "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU",
+      "kernel": "efficient-attention-flash"
+    }
+  ]
+}
